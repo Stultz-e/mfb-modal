@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>modal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+      Launch demo modal
+    </button>
+      
+    <!-- Modal -->
+    <div class="modal fade login__fade-show" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="Login Modal" aria-hidden="true">
+      <div class="login modal-dialog modal-dialog-centered" role="document">
+        <div class="login__content modal-content">
+          <div class="login__head modal-header">
+            <img src="img/logo.png" alt="mfb logo">
+            <button type="button" class="login__close close" data-dismiss="modal" aria-label="Close">
+              <img src="img/times.png" alt="exit">
+            </button>
+          </div>
+          <div class="login__body login__body--login modal-body">
+            <h1>Welcome Back</h1>
+            <a class="login__btn">
+              <img src="img/linkedin.png" alt="log in with Linkedin">
+                <h2>Login with LinkedIn</h2>
+            </a>
+            <a class="login__btn">
+              <img src="img/twitter.png" alt="Log in With Google">
+                <h2>Login with Google</h2>
+            </a>
+            <a class="login__btn">
+              <img src="img/facebook.png" alt="Log in With Facebook">
+                <h2>Login with Facebook</h2>
+            </a>
+            <a class="login__btn" id="getLogIn">
+              <img src="img/email.png" alt="Log in With Email">
+                <h2>Login with Email</h2>
+            </a>
+
+            <form action="" class="loginform loginform--email" id="loginForm">
+                <div class="form-group loginform__input  loginform__input--email">
+                    <label for="Name">Email</label>
+                    <input class="form-control" type="email">
+                  </div>
+                  <div class="form-group loginform__input loginform__input--pl1 loginform__input--email">
+                    <label for="Password">Password</label>
+                    <input class="form-control" type="text">
+                  </div>
+                  
+                  <div class="loginform__btn loginform__btn--email">
+                      login
+                  </div>
+                  <div class="loginform__links">
+                      <div class="form-group">
+                          <input type="checkbox">
+                          <label for="checkbox">Keep me Signed in</label>
+                      </div>
+                      <a href="#">Forgot Password?</a>
+                  </div>
+            </form>
+
+          </div>
+          <div class="login__footer modal-footer">
+            <a href="register.html">Don't have an account? <span>Join Us</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+    $(document).ready(function(){
+      $("#getLogIn").click(function(){
+        $("#loginForm").toggleClass("showform");
+      });
+    });
+    </script>
+
+  </body>
+</html>

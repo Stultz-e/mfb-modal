@@ -1,0 +1,301 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 576px) {
+  .login {
+    max-width: 765px;
+    margin: 1.75rem auto;
+  }
+}
+
+.login__content {
+  border-radius: 0;
+  border: none;
+}
+
+.login__body {
+  padding: 20px 10px;
+}
+
+.login__body--login {
+  padding: 30px 10px;
+}
+
+@media (min-width: 992px) {
+  .login__body {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    padding: 30px 106px;
+  }
+}
+
+.login__body h1 {
+  color: #2E3137;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .login__body h1 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 992px) {
+  .login__body h1 {
+    font-size: 50px;
+  }
+}
+
+.login__head {
+  background-color: #2E3137;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5rem 4rem;
+  border-radius: 0;
+}
+
+.login__head img {
+  margin: 0 auto;
+}
+
+.login__btn {
+  max-width: 590px;
+  height: 88px;
+  background-color: #F6F6F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  cursor: pointer;
+  -webkit-transition: ease-in 300ms background-color;
+  transition: ease-in 300ms background-color;
+}
+
+@media (min-width: 576px) {
+  .login__btn {
+    padding: 30px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .login__btn {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 992px) {
+  .login__btn {
+    font-size: 50px;
+  }
+}
+
+.login__btn:hover {
+  background-color: #dcdcdc;
+}
+
+.login__btn:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.login__btn img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 0 10% 0 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .login__btn img {
+    height: 40px;
+    padding: 0 6% 0 20px;
+  }
+}
+
+.login__btn h2 {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .login__btn h2 {
+    font-size: 22px;
+  }
+}
+
+.login__close {
+  margin: 0 !important;
+  padding: 0 !important;
+  opacity: 1;
+  color: #fff;
+}
+
+.login__close::focus {
+  outline: none;
+}
+
+.login__close:hover {
+  color: #fff;
+}
+
+.login__footer {
+  height: 109px;
+  background-color: #F6F6F6;
+  border-top: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .login__footer {
+    margin-top: 10px;
+  }
+}
+
+.login__footer a {
+  text-align: center;
+  font-size: 36px;
+  text-decoration: none;
+  color: #2E3137;
+}
+
+@media screen and (max-width: 576px) {
+  .login__footer a {
+    font-size: 28px;
+  }
+}
+
+.login__footer a span {
+  color: #D67C3A;
+}
+
+.loginform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loginform--email {
+  padding: 0 10px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  position: absolute;
+  -webkit-transition: 300ms ease-in all;
+  transition: 300ms ease-in all;
+  opacity: 0;
+}
+
+.loginform__show {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.loginform__input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 576px) {
+  .loginform__input {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .loginform__input--pr1 {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .loginform__input--pl1 {
+    padding-left: 10px;
+  }
+}
+
+.loginform__input input {
+  height: 50px;
+  border-radius: 0;
+}
+
+.loginform__input input.clear {
+  margin-bottom: 0;
+}
+
+.loginform__input input:focus, .loginform__input input:active {
+  outline: none;
+  border-color: #D67C3A;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+}
+
+.loginform__btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #D67C3A;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 15px 0;
+  cursor: pointer;
+  margin: 30px 0 20px;
+}
+
+.loginform__btn--email {
+  margin: 0 0 20px;
+}
+
+.loginform__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.loginform__links a {
+  color: #D67C3A;
+  text-decoration: none;
+}
+
+.showform {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  position: relative;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  opacity: 1;
+}
+/*# sourceMappingURL=styles.css.map */

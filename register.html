@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>modal</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+    Launch demo modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade login__fade-show center" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="Login Modal"
+    aria-hidden="true">
+    <div class="login modal-dialog modal-dialog-centered" role="document">
+      <div class="login__content modal-content">
+        <div class="login__head modal-header">
+          <img src="img/logo.png" alt="mfb logo">
+          <button type="button" class="login__close close" data-dismiss="modal" aria-label="Close">
+            <img src="img/times.png" alt="exit">
+          </button>
+        </div>
+        <div class="login__body modal-body">
+          <h1>Sign Up</h1>
+          <form class="loginform">
+            <div class="form-group loginform__input loginform__input--pr1">
+              <label for="Name">Name</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="form-group loginform__input loginform__input--pl1 ">
+              <label for="Company">Company</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="form-group loginform__input loginform__input--pr1  ">
+              <label for="Email">Email</label>
+              <input class="form-control" type="email">
+            </div>
+            <div class="form-group loginform__input loginform__input--pl1 ">
+              <label for="Username">Username</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="form-group loginform__input loginform__input--pr1">
+              <label for="Password">Password</label>
+              <input class="form-control" type="password">
+            </div>
+            <div class="loginform__input loginform__input--pl1 form-group">
+              <label for="re-enter Password">Re-enter Password</label>
+              <input class="form-control" type="password">
+            </div>
+            <div class="loginform__btn">create an account</div>
+            <div class="form-group">
+              <input type="checkbox">
+              <label for="checkbox">I agree to the Terms of Use and Privacy Policy </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
